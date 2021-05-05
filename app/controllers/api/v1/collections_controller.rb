@@ -11,6 +11,7 @@ class Api::V1::CollectionsController < ApplicationController
             render json: collection 
         else
             render json: {errors: collection.errors.full_messages}
+        end
     end
 
     private
