@@ -12,3 +12,8 @@
  pat = User.create(email: "pat@email.com", password: "string")
  kyle = User.create(email: "kyle@email.com", password: "string")
 
+ 
+
+basketball = Collection.create(title: "Basketball")
+football = Collection.create(title: "Football")
+baseball = Collection.create(title: "Baseball")

@@ -8,15 +8,16 @@ class Api::V1::CollectionsController < ApplicationController
     def create 
         collection = Collection.new(collection_params)
         if collection.save 
-            render json: collection 
+            render json: CollectionSerializer.new(collection)
         else
             render json: {errors: collection.errors.full_messages}
         end
     end
 
     private
+
         def collection_params 
-            params.require(:collection).permit(:name)
+            params.require(:collection).permit(:title)
         end
 
 end

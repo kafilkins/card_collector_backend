@@ -1,7 +1,7 @@
 class CollectionSerializer
   include FastJsonapi::ObjectSerializer
-  attributes :name
+    attributes :title
 
-  belongs_to :user
-  has_many :cards
+    #belongs_to :user
+    #has_many :cards
 end
