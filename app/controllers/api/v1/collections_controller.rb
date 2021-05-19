@@ -15,7 +15,6 @@ class Api::V1::CollectionsController < ApplicationController
     end
 
     def destroy 
-        byebug
         collection = Collection.find(params[:id])
         collection.destroy
     end
