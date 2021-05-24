@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Card Collector is an application that allows someone to document the trading cards that they have within their collection. It has a rails-api backend with a javascript frontend. An individual is able to create a collection and provide a title, like baseball, basketball or pokemon, through the javascript frontend, which then communicates with the backend rails functionaility, creating and saving the new object that has been created. After the new collection object is created, as user can then enter the specific card information that relates to the title of the collection they just created. Again, the new card would be created by using the javascript frontend and then communicates with the rails backend to create a has-many relationship, where a collecton has many cards. 
 
-Things you may want to cover:
+Installation - Fork each repository (*'card_collector_frontend'* and 'card_collector_backend') - Clone each file to your computer - Change into the proper directory for each repo. Please note, you'll need to have multiple terminals open, in each proper directory, one for 'card_collector_frontend' and 'card_collector_backend'. For the 'card_collector_backend' directory, you will need to run 'bundle install', run 'rails db:migrate', then run 'rails s' to get the server running. For the 'card_collector_frontend', once you're in the proper directory, you can run 'open index.html' and start adding your collections and cards to each collection. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+*'Link for 'card_collector_frontend' - 'https://github.com/kafilkins/card_collector_frontend'*
